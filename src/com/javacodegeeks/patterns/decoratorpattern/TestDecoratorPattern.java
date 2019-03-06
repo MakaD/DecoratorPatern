@@ -13,8 +13,8 @@ public class TestDecoratorPattern {
 		pizza = new GreenOlives(pizza);
 		pizza = new Spinach(pizza);
 		
-		System.out.println("Desc: "+pizza.getDesc());
-		System.out.println("Price: "+dformat.format(pizza.getPrice()));
+		System.out.println("Desc: "+ pizza.getDesc());
+		System.out.println("Price: "+ dformat.format(pizza.getPrice()));
 		
 		pizza = new SimplyNonVegPizza();
 		
@@ -23,8 +23,8 @@ public class TestDecoratorPattern {
 		pizza = new Cheese(pizza);
 		pizza = new Ham(pizza);
 		
-		System.out.println("Desc: "+pizza.getDesc());
-		System.out.println("Price: "+dformat.format(pizza.getPrice()));
+		System.out.println("Desc: "+ pizza.getDesc());
+		System.out.println("Price: "+ dformat.format(pizza.getPrice()));
 	}
 
 }

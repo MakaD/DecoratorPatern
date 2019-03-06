@@ -10,13 +10,20 @@ public class RedOnions extends PizzaDecorator{
 
 	@Override
 	public String getDesc() {
-		return pizza.getDesc()+", Red Onions (3.75)";
+		return pizza.getDesc()+", Red Onions (2.18)";
 	}
 
 
 	@Override
 	public double getPrice() {
-		return pizza.getPrice()+3.75;
+		return pizza.getPrice()+2.18;
 	}
+
+	@Override
+	public String toString() {
+		return "RedOnions [pizza=" + pizza + "]";
+	}
+	
+    
 
 }
